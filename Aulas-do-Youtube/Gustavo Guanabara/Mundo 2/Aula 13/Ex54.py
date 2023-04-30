@@ -1,25 +1,11 @@
-n1 = int(input('Qual a data de nascimento da primeira pessoa?: '))
-n2 = int(input('Qual a data de nascimento da segunda pessoa?: '))
-n3 = int(input('Qual a data de nascimento da terceira pessoa?: '))
-n4 = int(input('Qual a data de nascimento da quarta pessoa?: '))
-n5 = int(input('Qual a data de nascimento da quinta pessoa?: '))
-n6 = int(input('Qual a data de nascimento da sexta pessoa?: '))
-n7 = int(input('Qual a data de nascimento da sétima pessoa?: '))
-adulto = 0
-
-for a in range(0,1):
-    if n1 - 2021 >= 21:
-        adulto += 1
-    if n2 - 2021 >= 21:
-        adulto += 1
-    if n3 - 2021 >= 21:
-        adulto += 1
-    if n4 - 2021 >= 21:
-        adulto += 1
-    if n5 - 2021 >= 21:
-        adulto += 1
-    if n6 - 2021 >= 21:
-        adulto += 1
-    if n7 - 2021 >= 21:
-        adulto += 1
-print(f' Das pessoas faladas, {adulto} são adultas!')
+menores = 0
+maiores = 0
+for pessoas in range(1,8):
+    nasc = int(input(f'Em que ano a {pessoas} nasceu? '))
+    idade = 2023 - nasc
+    if idade >= 21:
+        maiores += 1
+    else: 
+        menores += 1
+print(f'Ao todo tivemos {maiores} pessoas maiores de idade.')
+print(f'E também tivemos {menores} pessoas menores de idade.')

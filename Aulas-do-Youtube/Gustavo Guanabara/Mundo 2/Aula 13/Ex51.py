@@ -1,4 +1,6 @@
-for a in range(0, 6):
-    n = int(input('Digite um número: '))
-    if n % 2 == 0:
-        print(f'O valor {n} é divisivel por dois.')
+primeiro = int(input('Primeiro termo: '))
+razão = int(input('Razão: '))
+décimo = primeiro + (10 - 1) * razão
+for c in range(primeiro, décimo + razão, razão):
+    print('{} '.format(c, end=' → ' ))
+print('Acabou!')
