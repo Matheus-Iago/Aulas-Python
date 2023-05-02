@@ -1,0 +1,2 @@
+Lobo = True
+Vaca = True

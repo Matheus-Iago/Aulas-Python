@@ -1,0 +1,5 @@
+brasil = ('Palmeiras', 'Internacional', 'Fluminense', 'Corinthias', 'Flamengo', 'Athletico-PR', 'Athletico-MG', 'Fortaleza', 'São Paulo', 'América-MG', 'Botafogo', 'Santos', 'Goiás', 'Bragantino', 'Coritiba', 'Cuiabá', 'Ceará SC', 'Atlético=GO', 'Avai', 'Juventude')
+print('Os cinco primeiro colocados foram: {}'.format(brasil[0:6]))
+print('Os cinco últimos colocados foram: {}'.format(brasil[16:]))
+print('A lista, em ordem alfabetica é: {}'.format(sorted(brasil)))
+print('O time Flamengo está na posição {}'.format(brasil.index('Flamengo')))
